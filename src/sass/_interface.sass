@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body 
   +reg
 img 
@@ -13,9 +15,31 @@ img
   .container 
     max-width: 580px
     width: 90% 
+@media (max-width: 576px)  
+  .container 
+    max-width: 370px
+    width: 95%  
       
 .button 
   border-radius: 10px
   background-color: $main-color
   border: none
-  padding: 18px 30px  
+  padding: 25px 25px 
+  outline: none
+  +bold 
+  &:hover 
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding-top: 72px
+  &-title
+    font-size: 24px
+    +bold
+  &-subtitle
+    display: block 
+    font-size: 16px  
+.input 
+    border: 1px solid $border-input
+    padding: 23px 28px 
+    font-size: 15px
+    border-radius: 10px  

@@ -12,11 +12,12 @@
     display: flex 
     flex-direction: column   
     font-size: 13px
+    line-height: 0.7
     +reg    
   &__button 
-    margin-left: 30px 
+    margin-left: 25px 
     font-size: 13px
-    padding: 15px 22px
+    padding: 17px 30px
     +bold
   &__phone 
     display: inline-block
@@ -35,3 +36,12 @@
       padding: 15px 26px  
     &__logo 
       width: 90px  
+@media (max-width: 576px) 
+  .navbar
+    padding: 9px 9px 14px
+    &__button 
+      font-size: 10px
+      border-radius: 5px 
+      margin-top: -9px
+      padding: 14px 27px
+    
