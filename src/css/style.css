@@ -49,8 +49,8 @@ img {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 370px;
-    width: 95%;
+    max-width: 277px;
+    width: 99%;
   }
 }
 
@@ -167,12 +167,11 @@ img {
 
 @media (max-width: 576px) {
   .navbar {
-    padding: 9px 9px 14px;
+    padding: 8px 9px 14px;
   }
   .navbar__button {
     font-size: 10px;
     border-radius: 5px;
-    margin-top: -9px;
     padding: 14px 27px;
   }
 }
@@ -192,7 +191,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 110px;
+  padding-right: 0;
 }
 
 .hero-text__title {
@@ -292,10 +291,13 @@ img {
 
 @media (max-width: 576px) {
   .hero {
-    padding: 23px 0 30px;
+    padding: 23px 0 50px;
+  }
+  .hero-block {
+    padding-top: 2px;
   }
   .hero-text {
-    padding-left: 10px;
+    padding-left: 2px;
   }
   .hero-text__title {
     font-size: 24px;
