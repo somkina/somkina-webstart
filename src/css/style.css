@@ -589,6 +589,9 @@ img {
   }
   .modal-dialog__title {
     font-size: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .modal-dialog__subtitle {
     margin: 20px 15px;
