@@ -89,6 +89,7 @@ img {
   padding: 23px 28px;
   font-size: 15px;
   border-radius: 10px;
+  outline: none;
 }
 
 /*импорт стилей шапки*/
@@ -446,14 +447,14 @@ img {
     padding-top: 50px;
   }
   .offer-block {
-    padding-right: 15px;
-    padding-left: 10px;
-    padding-top: 5px;
+    max-width: 275px;
+    margin: auto;
   }
   .offer__title {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 18px;
+    margin-right: 10px;
   }
   .offer__subtitle {
     font-size: 14px;
@@ -464,7 +465,7 @@ img {
     margin-bottom: 9px;
   }
   .offer__button {
-    padding: 18px 40px;
+    padding: 18px 35px;
     margin-bottom: 20px;
     line-height: 1.3;
     width: 100%;
@@ -472,7 +473,7 @@ img {
   .offer-text {
     width: 100%;
     padding-left: 5px;
-    padding-right: 30px;
+    padding-right: 35px;
     font-size: 15px;
   }
   .offer-text__item {
@@ -510,7 +511,14 @@ img {
   min-width: 200px;
   max-height: 674px;
   background-color: #fff;
-  padding: 80px 95px 76px;
+  padding: 40px 95px 76px;
+}
+
+.modal-dialog__close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .modal-dialog__title {
@@ -519,6 +527,7 @@ img {
   text-align: center;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  margin: 0;
 }
 
 .modal-dialog__subtitle {
@@ -539,6 +548,7 @@ img {
   width: 370px;
   margin-bottom: 15px;
   padding: 24px 21px;
+  outline: none;
 }
 
 .modal-dialog__text {
@@ -573,9 +583,30 @@ img {
   height: 70px;
 }
 
-.modal__button__close {
-  position: absolute;
-  top: 0;
-  right: 0;
+@media (max-width: 576px) {
+  .modal-dialog {
+    padding: 0;
+  }
+  .modal-dialog__title {
+    font-size: 18px;
+  }
+  .modal-dialog__subtitle {
+    margin: 20px 15px;
+    padding: 0;
+    text-align: center;
+  }
+  .modal-dialog__input {
+    max-width: 260px;
+    width: 100%;
+  }
+  .modal-dialog__phone {
+    font-size: 18px;
+  }
+  .modal__button {
+    max-width: 260px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

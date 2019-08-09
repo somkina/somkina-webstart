@@ -17,12 +17,18 @@
     min-width: 200px
     max-height: 674px
     background-color: #fff
-    padding: 80px 95px 76px
+    padding: 40px 95px 76px
+    &__close
+      cursor: pointer
+      position: absolute
+      top: 0
+      right: 0
     &__title 
       font-size: 22px
       line-height: 33px
       text-align: center
       +bold
+      margin: 0 
     &__subtitle
       display: block
       font-size: 16px
@@ -37,6 +43,7 @@
       width: 370px
       margin-bottom: 15px
       padding: 24px 21px
+      outline: none
     &__text
       display: block
       font-size: 15px
@@ -61,7 +68,23 @@
     +bold 
     width: 368px
     height: 70px 
-    &__close
-      position: absolute
-      top: 0
-      right: 0
+@media (max-width: 576px)
+  .modal
+    &-dialog
+      padding: 0
+      &__title
+        font-size: 18px
+      &__subtitle
+        margin: 20px 15px
+        padding: 0
+        text-align: center  
+      &__input
+        max-width: 260px
+        width: 100%
+      &__phone
+        font-size: 18px
+    &__button
+      max-width: 260px
+      width: 100% 
+      margin-bottom: 20px
+      font-size: 12px   
