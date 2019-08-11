@@ -74,12 +74,14 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку
             бесплатного дизайн-проекта!
           </span>
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+          <form action="#" id="offer-form" class="form offer__form">
+            <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+            <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект
             </button>
           </form>
+          <div class="success"></div>
+          
           <div class="offer-text">
               <div class="offer-text__item">
                 Наш менеджер перезвонит Вам
@@ -101,7 +103,7 @@
       <h4 class="modal-dialog__title">Узнайте точную стоимость
       ремонта по телефону!</h4>
       <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="#" class="form modal-dialog__form">
+      <form action="#"  class="form modal-dialog__form">
         <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
         <input type="tell" class="input modal-dialog__input" placeholder="Ваш телефон">
         <button class="button modal__button">Узнать стоимость
@@ -118,10 +120,15 @@
     </div><!--/modal-dialog-->
   </div><!--/modal-->
   
+
+
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
-
+  <script src="js/scripts.js"></script>
+  
 
   
 </body>
