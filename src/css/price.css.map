@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,aAAQ,CAAC;EACP,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;CAAG;;AACvB,AAAD,gBAAW,CAAC;EACV,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;CAAG;;AACzB,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,SAAS;CAIK;;AAHrB,AAAD,MAAE,CAAC;EACD,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/blocks/price.sass"
+    ],
+    "names": [],
+    "file": "price.css"
+}
