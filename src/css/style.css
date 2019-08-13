@@ -70,11 +70,10 @@ img {
 }
 
 .section {
-  padding-top: 72px;
+  padding-top: 74px;
 }
 
 .section-title {
-  max-width: 500px;
   font-size: 24px;
   text-align: center;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -96,6 +95,11 @@ img {
 
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
+}
+
+.success {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 /*импорт стилей шапки*/
@@ -578,18 +582,31 @@ img {
   }
 }
 
+.price {
+  padding-top: 74px;
+}
+
 .price__title {
   margin: auto;
-  margin-bottom: 58px;
+  max-width: 550px;
+  margin-top: 13px;
+  margin-bottom: 38px;
+  color: #000000;
+  font-size: 30px;
+  line-height: 47px;
 }
 
 .price__subtitle {
-  margin-bottom: 59px;
+  margin-bottom: 48px;
   text-align: center;
+  color: #000000;
+  font-size: 20px;
+  line-height: 45px;
 }
 
 .price__card {
   margin-bottom: 30px;
+  padding-bottom: 23px;
 }
 
 .card {
@@ -609,11 +626,15 @@ img {
 }
 
 .card__text {
-  padding: 40px;
+  padding: 20px;
 }
 
 .card__title {
   margin-top: 0;
+  margin-bottom: 18px;
+  color: #000000;
+  font-size: 18px;
+  line-height: 45px;
 }
 
 .card__image {
@@ -641,6 +662,7 @@ img {
   text-decoration: none;
   color: #333333;
   font-size: 16px;
+  line-height: 18px;
   position: relative;
 }
 
@@ -671,6 +693,65 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.img {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .price__title {
+    font-size: 22px;
+  }
+  .price__subtitle {
+    font-size: 16px;
+  }
+  .card {
+    margin: auto;
+    text-align: center;
+  }
+  .card__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .price {
+    padding-top: 37px;
+  }
+  .price__card {
+    margin-bottom: 30px;
+  }
+  .price__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    margin-bottom: 9px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    line-height: 45px;
+    margin-bottom: 44px;
+  }
+  .card {
+    width: 271px;
+    height: 300px;
+  }
+  .card__text {
+    padding: 0;
+  }
+  .card__title {
+    font-size: 14px;
+    line-height: 7px;
+    margin-bottom: 15px;
+    margin-top: 32px;
+  }
+  .card__link {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .modal {
