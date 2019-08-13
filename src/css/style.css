@@ -809,6 +809,7 @@ img {
   margin-top: 49px;
   line-height: 43px;
   font-size: 30px;
+  max-width: 660px;
 }
 
 .steps__subtitle {
@@ -856,30 +857,34 @@ img {
   }
   .steps__title {
     font-size: 24px;
+    max-width: 410px;
   }
 }
 
 @media (max-width: 586px) {
+  .step {
+    max-height: 178px;
+  }
   .steps {
     padding: 0;
   }
   .steps__title {
     margin: auto;
-    margin-bottom: 23px;
-    margin-top: 24px;
+    margin-bottom: 22px;
+    margin-top: 22px;
     line-height: 22px;
-    font-size: 17px;
+    font-size: 18px;
   }
   .steps__subtitle {
     font-size: 14px;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
   .step__image {
-    margin-bottom: 22px;
+    margin-bottom: 15px;
   }
   .step__text {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 19px;
     max-width: 126px;
   }
 }
