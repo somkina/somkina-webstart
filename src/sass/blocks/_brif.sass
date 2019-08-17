@@ -3,6 +3,7 @@
   background-position: left center, center right
   background-size: 50%, contain
   background-repeat: repeat-y, no-repeat
+  position: relative
   &-block
     display: flex
   &__interview
@@ -11,6 +12,7 @@
     flex-basis: 50%
     padding-left: 215px
     text-align: center
+    position: relative
   &__input
     width: 100%
     max-width: 370px
@@ -21,7 +23,7 @@
     width: 100%
     max-width: 370px 
     margin-top: 15px
-    margin-bottom: 30px  
+    margin-bottom: 30px 
 .interview 
   padding-right: 68px
   padding-bottom: 112px
@@ -65,11 +67,29 @@
     color: $black
   &__subtitle
     display: block  
-    margin-bottom: 51px
+    margin-bottom: 30px
     font-size: 16px 
   &__description
     display: block   
     text-align: center
+#brif-name-error
+  color: red 
+  position: absolute
+  top: 244px
+  left: 340px
+  font-size: 14px
+#brif-phone-error
+  color: red 
+  position: absolute
+  top: 323px
+  left: 335px
+  font-size: 14px
+#brif-email-error
+  color: red 
+  position: absolute
+  top: 408px
+  left: 321px
+  font-size: 14px    
 @media (max-width: 1200px) 
   .brif
     &__form
@@ -100,7 +120,16 @@
     &__description
       font-size: 14px
       padding-left: 66px
-      padding-right: 69px      
+      padding-right: 69px 
+  #brif-name-error
+    top: 227px
+    left: 143px  
+  #brif-phone-error
+    top: 301px
+    left: 138px  
+  #brif-email-error
+    top: 374px
+    left: 117px        
 @media (max-width: 768px)  
   .brif
     background-image: url('../img/brif/brif-color-bg.png'), url('../img/brif/brif-bg.jpg')
@@ -178,3 +207,12 @@
       line-height: 24px
       padding-left: 66px
       padding-right: 62px      
+  #brif-name-error
+    top: 189px
+    left: 91px  
+  #brif-phone-error
+    top: 263px
+    left: 80px  
+  #brif-email-error
+    top: 337px
+    left: 63px         
