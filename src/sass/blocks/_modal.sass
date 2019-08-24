@@ -71,21 +71,37 @@
 #modal-name-error
   color: red 
   position: absolute
-  top: 244px
-  left: 340px
+  top: 284px
+  left: 220px
   font-size: 14px
 #modal-phone-error
   color: red 
   position: absolute
-  top: 323px
-  left: 335px
+  top: 370px
+  left: 220px
   font-size: 14px      
-@media (max-width: 580px)
+@media (max-width: 768px) 
+  .modal
+    &-dialog
+      &__title
+        font-size: 16px
+        margin-top: 15px
+        margin-left: 10px
+        margin-right: 10px
+      &__subtitle
+        font-size: 14px
+        padding-left: 0
+        text-align: center  
+      &__input
+        padding-left: 20px  
+    &__button
+      font-size: 16px     
+@media (max-width: 576px)
   .modal
     &-dialog
       padding: 0
       &__title
-        font-size: 18px
+        font-size: 16px
         margin-top: 15px
         margin-left: 10px
         margin-right: 10px
@@ -106,13 +122,29 @@
   #modal-name-error
     color: red 
     position: absolute
-    top: 170px
-    left: 205px
+    top: 190px
+    left: 133px
     font-size: 12px
   #modal-phone-error
     color: red 
     position: absolute
-    top: 253px
-    left: 207px
+    top: 276px
+    left: 133px
     font-size: 12px
-      
+@media (max-width: 488px)    
+  .modal
+    &-dialog
+      &__form
+        position: relative 
+  #modal-name-error
+    color: red 
+    position: absolute
+    top: 67px
+    left: 90px
+    font-size: 12px
+  #modal-phone-error
+    color: red 
+    position: absolute
+    top: 151px
+    left: 90px
+    font-size: 12px 

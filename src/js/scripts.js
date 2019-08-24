@@ -1,7 +1,5 @@
 $(document).ready(function () {
-
-/*инициализация wow.js*/
-  new WOW().init();
+  
 
   $('#brif-form').validate({
     rules: {

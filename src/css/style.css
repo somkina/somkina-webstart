@@ -6,13 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\_base.css);
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\sliding_entrances\slideInLeft.css);
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\sliding_entrances\slideInRight.css);
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\sliding_entrances\slideInUp.css);
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\fading_entrances\fadeInUp.css);
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\zooming_entrances\zoomIn.css);
-@import url(c:\Users\я\Desktop\projects\somkina-webstart\src\sass\animated\rotating_entrances\rotateInUpLeft.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -457,6 +450,258 @@ img {
 b {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@media (print), (prefers-reduced-motion: reduce) {
+  .animated {
+    -webkit-animation-duration: 1ms !important;
+            animation-duration: 1ms !important;
+    -webkit-transition-duration: 1ms !important;
+            transition-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+@-webkit-keyframes rotateInUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateInUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+          animation-name: rotateInUpLeft;
 }
 
 /* Slider */
@@ -923,14 +1168,14 @@ b {
   #offer-name-error {
     color: red;
     position: absolute;
-    top: 260px;
+    top: 285px;
     left: 26px;
     font-size: 14px;
   }
   #offer-phone-error {
     color: red;
     position: absolute;
-    top: 342px;
+    top: 360px;
     left: 21px;
     font-size: 14px;
   }
@@ -1364,6 +1609,9 @@ b {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .steps__title {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1601,20 +1849,20 @@ b {
     padding-right: 69px;
   }
   #brif-name-error {
-    top: 227px;
+    top: 239px;
     left: 143px;
   }
   #brif-phone-error {
-    top: 301px;
+    top: 313px;
     left: 138px;
   }
   #brif-email-error {
-    top: 374px;
+    top: 394px;
     left: 117px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
@@ -1631,6 +1879,18 @@ b {
   }
   .brif__form {
     margin-top: 50px;
+  }
+  #brif-name-error {
+    top: 239px;
+    left: 227px;
+  }
+  #brif-phone-error {
+    top: 313px;
+    left: 227px;
+  }
+  #brif-email-error {
+    top: 392px;
+    left: 227px;
   }
 }
 
@@ -1689,11 +1949,11 @@ b {
   }
   .interview-list__text {
     font-size: 14px;
-    max-width: 250px;
+    max-width: 205px;
     line-height: 18px;
   }
   .interview-list__counter {
-    margin-right: 8px;
+    margin-right: 12px;
   }
   .interview-list__item {
     margin-bottom: 22px;
@@ -1717,15 +1977,42 @@ b {
     padding-right: 62px;
   }
   #brif-name-error {
-    top: 189px;
+    top: 200px;
+    left: 91px;
+    font-size: 12px;
+  }
+  #brif-phone-error {
+    top: 275px;
+    left: 80px;
+    font-size: 12px;
+  }
+  #brif-email-error {
+    top: 348px;
+    left: 63px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 325px) {
+  .form {
+    padding-left: 0;
+  }
+  .form__title {
+    font-size: 14px;
+  }
+  .form__subtitle {
+    font-size: 12px;
+  }
+  #brif-name-error {
+    top: 197px;
     left: 91px;
   }
   #brif-phone-error {
-    top: 263px;
+    top: 270px;
     left: 80px;
   }
   #brif-email-error {
-    top: 337px;
+    top: 345px;
     left: 63px;
   }
 }
@@ -1975,25 +2262,45 @@ b {
 #modal-name-error {
   color: red;
   position: absolute;
-  top: 244px;
-  left: 340px;
+  top: 284px;
+  left: 220px;
   font-size: 14px;
 }
 
 #modal-phone-error {
   color: red;
   position: absolute;
-  top: 323px;
-  left: 335px;
+  top: 370px;
+  left: 220px;
   font-size: 14px;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 768px) {
+  .modal-dialog__title {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .modal-dialog__subtitle {
+    font-size: 14px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .modal-dialog__input {
+    padding-left: 20px;
+  }
+  .modal__button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
   .modal-dialog {
     padding: 0;
   }
   .modal-dialog__title {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -2019,15 +2326,35 @@ b {
   #modal-name-error {
     color: red;
     position: absolute;
-    top: 170px;
-    left: 205px;
+    top: 190px;
+    left: 133px;
     font-size: 12px;
   }
   #modal-phone-error {
     color: red;
     position: absolute;
-    top: 253px;
-    left: 207px;
+    top: 276px;
+    left: 133px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 488px) {
+  .modal-dialog__form {
+    position: relative;
+  }
+  #modal-name-error {
+    color: red;
+    position: absolute;
+    top: 67px;
+    left: 90px;
+    font-size: 12px;
+  }
+  #modal-phone-error {
+    color: red;
+    position: absolute;
+    top: 151px;
+    left: 90px;
     font-size: 12px;
   }
 }
