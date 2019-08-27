@@ -14,8 +14,13 @@ gulp.task('minify-css', function (done) {
     .pipe(gulp.dest('dist/css/'))
   done();
 });
-gulp.task('move-js', function (done) {
-  return gulp.src(['./src/js/*.js', '!src/js/*.min.js'])
+gulp.task('move-min-js', function (done){
+  return gulp.src('./src/js/*min.js')
+    .pipe(gulp.dest('dist/js/'))
+  done();
+});
+gulp.task('minify-js', function (done) {
+  return gulp.src(['src/js/*.js', '!src/js/*.min.js'])
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
@@ -36,13 +41,13 @@ gulp.task('fonts', function (done) {
     .pipe(gulp.dest('dist/fonts'))
 });
 gulp.task('tinypng', function (done) {
-  return gulp.src('images/src/img/**/*.{png,jpg,jpeg}')
+  return gulp.src('./src/img/**/*.{png,jpg,jpeg}')
     .pipe(tinyPNG({
       key: 'f45TcCWn7FjDxV4N5H1m1gV2ylf9qgQn',
     }))
     .pipe(gulp.dest('dist/img'));
   done()
 });
-gulp.task('default', gulp.series('minify-css', 'move-js', 'fonts', 'htmlmin', function (done) {
+gulp.task('default', gulp.series('minify-css', 'move-min-js', 'minify-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
   done();
 }));

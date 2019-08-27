@@ -36,7 +36,7 @@ $(document).ready(function () {
         type: 'POST',
         data: $("#brif-form").serialize(),
         success: function (data) {
-          $('.success-brif').text(data + ',ваша форма отправлена');
+          $('.success').text(data + ',ваша форма отправлена');
           $('input').val('');
         }
       });
@@ -72,7 +72,7 @@ $(document).ready(function () {
         type: 'POST',
         data: $("#offer-form").serialize(),
         success: function (data) {
-          $('.success-offer').text(data + ',ваша форма отправлена');
+          $('.success').text(data + ',ваша форма отправлена');
           $('input').val('');
         }
       });
@@ -103,7 +103,7 @@ $(document).ready(function () {
         type: 'POST',
         data: $("#modal-form").serialize(),
         success: function (data) {
-          $('.success-modal').text(data + ',ваша форма отправлена');
+          $('.success').text(data + ',ваша форма отправлена');
           $('input').val('');
         }
       });
