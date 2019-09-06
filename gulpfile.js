@@ -48,6 +48,11 @@ gulp.task('tinypng', function (done) {
     .pipe(gulp.dest('dist/img'));
   done()
 });
-gulp.task('default', gulp.series('minify-css', 'move-min-js', 'minify-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
+gulp.task('mail', function (done) {
+  return gulp.src('./src/**.php')
+    .pipe(gulp.dest('dist/'))
+  done();
+});
+gulp.task('default', gulp.series('minify-css', 'move-min-js', 'minify-js', 'fonts', 'htmlmin', 'tinypng', 'mail', function (done) {
   done();
 }));

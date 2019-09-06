@@ -36,7 +36,6 @@ $(document).ready(function () {
         type: 'POST',
         data: $("#brif-form").serialize(),
         success: function (data) {
-          $('.success').text(data + ',ваша форма отправлена');
           $('input').val('');
         }
       });
@@ -72,7 +71,7 @@ $(document).ready(function () {
         type: 'POST',
         data: $("#offer-form").serialize(),
         success: function (data) {
-          $('.success').text(data + ',ваша форма отправлена');
+         
           $('input').val('');
         }
       });
@@ -103,13 +102,33 @@ $(document).ready(function () {
         type: 'POST',
         data: $("#modal-form").serialize(),
         success: function (data) {
-          $('.success').text(data + ',ваша форма отправлена');
+        
           $('input').val('');
         }
       });
     }
   });
-    
+  
+  document.querySelector(".brif__button").addEventListener('click', function() {
+    swal({
+      title: "Ваша заявка отправлена",
+      confirmButtonColor: "#ffd200"
+    });
+  });
+
+  document.querySelector(".modal__button").addEventListener('click', function () {
+    swal({
+      title: "Ваша заявка отправлена",
+      confirmButtonColor: "#ffd200"
+    });
+  });
+
+  document.querySelector(".offer__button").addEventListener('click', function () {
+    swal({
+      title: "Ваша заявка отправлена",
+      confirmButtonColor: "#ffd200"
+    });
+  });
 
   
 });
